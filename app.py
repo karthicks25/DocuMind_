@@ -12,8 +12,8 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
 load_dotenv()
-os.getenv("AIzaSyDpTEiFa2eA8W4bByFMNijAjkRPl3yR_UI")
-genai.configure(api_key=os.getenv("AIzaSyDpTEiFa2eA8W4bByFMNijAjkRPl3yR_UI"))
+os.getenv("<Your_API_Key>")
+genai.configure(api_key=os.getenv("<Your_API_Key>"))
 
 def get_pdf_text(pdfs):
     text = ""
@@ -31,7 +31,7 @@ def get_text_chunks(text):
 
 
 def get_vector_store(text_chunks):
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001",google_api_key="AIzaSyDpTEiFa2eA8W4bByFMNijAjkRPl3yR_UI")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001",google_api_key="<Your_API_Key>")
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
     vector_store.save_local("faiss_index")
 
@@ -52,7 +52,7 @@ def get_conversational_chain():
     return chain
 
 def user_input(question):
-    GOOGLE_API_KEY = "AIzaSyDpTEiFa2eA8W4bByFMNijAjkRPl3yR_UI"
+    GOOGLE_API_KEY = "<Your_API_Key>"
     embeddings=GoogleGenerativeAIEmbeddings(model="models/embedding-001",google_api_key=GOOGLE_API_KEY)
 
     new_db=FAISS.load_local("faiss_index",embeddings=embeddings,allow_dangerous_deserialization=True)
