@@ -7,9 +7,13 @@ DocuMind revolutionizes the way you interact with PDFs. No longer are you simply
 ### Here's what you can do with DocuMind:
 
 **Upload any PDF:** Simply upload your document and let DocuMind analyze it.
+
 **Ask Questions:** Have a question about the content? Ask away! DocuMind uses powerful AI to understand your questions and provide accurate answers based on the PDF's text.
+
 **Get Summaries:** Need a quick overview of the document? DocuMind can generate concise summaries, saving you valuable time.
+
 **Find Specific Information:** Search for keywords, names, dates, or any information you need within the PDF.
+
 **Interactive Exploration:** DocuMind fosters an interactive experience, allowing you to delve deeper into the PDF's content through natural language conversation.
 
 
