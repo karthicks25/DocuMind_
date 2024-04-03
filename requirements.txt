@@ -7,3 +7,4 @@ langchain-text-splitters==0.0.1
 PyPDF2==3.0.1
 streamlit
 faiss-cpu
+python-dotenv
