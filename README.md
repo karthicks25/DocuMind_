@@ -1,6 +1,6 @@
 # DocuMind
 
-## Introducing DocuMind - Your Conversational PDF Assistant!
+### Introducing DocuMind - Your Conversational PDF Assistant!
 
 DocuMind revolutionizes the way you interact with PDFs. No longer are you simply reading static documents. Now, you can have a conversation with your PDFs, asking questions, getting summaries, and extracting key information effortlessly.
 
